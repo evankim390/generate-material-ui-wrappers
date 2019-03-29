@@ -1,0 +1,10 @@
+import Mui<%- component %>, { <%- component %>Props as Mui<%- component %>Props } from "<%- dependencyLocation %>";
+import * as React from "react";
+
+// https://material-ui.com/api/<%- componentDashed %>
+export function <%- component %>(props: Mui<%- component %>Props) {
+  return (<Mui<%- component %> {...props} />);
+}
+
+// Following line required, see https://material-ui.com/guides/composition/#wrapping-components
+<%- component %>.muiName = Mui<%- component %>.muiName;
